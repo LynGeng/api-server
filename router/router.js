@@ -9,11 +9,13 @@ const expressJoi = require('@escook/express-joi');
 // 导入部分路由模块
 const login = require('./login');
 const userinfo = require('./userinfo');
+const artcates = require('./artcate');
 
 // 整合全部路由
 const all = {
     ...login,
     ...userinfo,
+    ...artcates,
 }
 // 自动注册路由
 Object.keys(all).forEach(url => {

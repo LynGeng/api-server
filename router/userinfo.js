@@ -11,8 +11,8 @@ const {
 } = require('../schema/userinfo');
 
 module.exports = {
-    '/my/userinfo': {type: 'get', fn: getUserInfo},
-    '/my/userinfo': {type: 'post', fn: updateUserInfo, schema: update_userinfo_schema},
+    '/my/get/userinfo': {type: 'get', fn: getUserInfo},
+    '/my/update/userinfo': {type: 'post', fn: updateUserInfo, schema: update_userinfo_schema},
     '/my/update/password': {type: 'post', fn: updatePassword, schema: update_password_schema},
     '/my/update/avatar': {type: 'post', fn: updateAvatar, schema: update_avatar_schema},
 }
